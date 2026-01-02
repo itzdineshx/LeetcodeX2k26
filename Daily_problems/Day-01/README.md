@@ -1,16 +1,18 @@
-### About the Problem
-Problem Name   : Plus One
+## About the Problem
 
-LeetCode ID    : 66
+**Problem Name**   : Plus One
 
-Difficulty     : Easy
+**LeetCode ID**    : 66  
 
-Example :
+**Difficulty**     : Easy
+
+### Example
+
     Input:  digits = [1, 2, 3]
     Output: [1, 2, 4]   
 
 
-### Optimal Solution
+## Optimal Solution
 Algorithm:
 1. Initialize a carry variable with value 1.
 2. Traverse the digits array from right to left.
@@ -21,12 +23,17 @@ Algorithm:
 4. After loop, if a carry still exists, insert 1 at the beginning of the array.
 5. Return the array.
 
-### Complexity
+## Working
+![working](./Diagram.png)
 
-### Time Complexity:
-----------------
+
+## Complexity
+
+Time Complexity:
 O(n) – traversal of arrays
 
 Space Complexity:
------------------
 O(1) – Updating the current list itself
+
+## Submission
+![Submission](./submit.png)
