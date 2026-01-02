@@ -25,11 +25,11 @@ Algorithm:
 1. Initialize a carry variable with value 1.
 2. Traverse the digits array from right to left.
 3. For each digit:
-   - Add the carry to the current digit.(Digit[i]+carry)
-   - Update the digit to (sum % 10) to keep only the last digit.(10 % 10 = 0)
-   - Update the carry to (sum // 10) to handle overflow.
-4. After traversal, if a carry still exists, insert 1 at the beginning of the array.
-5. Return the updated digits array.
+   - Add the carry(Digit[i]+carry)
+   - Update the digit to (sum % 10)=>(10 % 10 = 0)
+   - Update carry (sum // 10) to handle overflow.
+4. After loop, if a carry still exists, insert 1 at the beginning of the array.
+5. Return the array.
 """
 
 class Solution:
