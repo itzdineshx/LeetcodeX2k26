@@ -27,12 +27,12 @@ Algorithm:
 5. <Step 5>
 """
 
-class Solution:
-    def <function_name>(self, <parameters>) -> <return_type>:
-        # Step-wise implementation
-        <write your logic here>
+# class Solution:
+#     def <function_name>(self, <parameters>) -> <return_type>:
+#         # Step-wise implementation
+#         <write your logic here>
 
-        return <result>
+#         return <result>
 
 """
 Time Complexity:
