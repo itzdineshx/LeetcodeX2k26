@@ -8,9 +8,9 @@ class Solution:
                 curr_prod = nums1[i-1] * nums2[j-1]
 
                 dp[i][j] = max(
-                    curr_prod,
-                    curr_prod + dp[i-1][j-1],
-                    dp[i-1][j],
-                    dp[i][j-1]
+                    curr_prod, # Take current pair
+                    curr_prod + dp[i-1][j-1], # Take current pair + previous best pairs
+                    dp[i-1][j], # Don't take current pair, keeps best prefix of nums1(i)
+                    dp[i][j-1] # Don't take current pair, keeps best prefix of nums2(j)
                 )
         return dp[n][m]
