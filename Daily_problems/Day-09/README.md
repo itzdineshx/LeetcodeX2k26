@@ -1,36 +1,38 @@
 ## About the Problem
 
-**Problem Name**   : <PROBLEM_NAME>  
-**LeetCode ID**    : <PROBLEM_ID>  
-**Difficulty**     : <Easy / Medium / Hard>
+**Problem Name**   : Smallest Subtree with all the Deepest Nodes  
+
+**LeetCode ID**    : 865
+
+**Difficulty**     : Medium
 
 ## Example
-Input: <input_example>
-
-Output: <output_example>
+    Input: root = [1]
+    Output: [1]
+    Explanation: The root is the deepest node in the tree.
 
 ## Algorithm
-1. <Step 1>
-2. <Step 2>
-3. <Step 3>
-4. <Step 4>
+1. Find the depth of every nodes
+2. Find the answer with the help of depth
+    - node is deepest of depth -> candiate
+    - both children is candidate -> parent is answer
 
 ---
 
 ## Working
 
-<!-- ![working](./Diagram.png) -->
-
+![working](./Diagram.png)
 
 ---
 
 ## Complexity
 
 Time Complexity:
-O(n) – traversal of arrays
+O(N) - traverse every node
 
 Space Complexity:
-O(n) – extra set is used
+O(H) - height of the tree
 
 ## Submission
-<!-- ![submission](./submit.png) -->
+
+![submission](./submit.png)
