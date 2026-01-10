@@ -1,25 +1,31 @@
 ## About the Problem
 
-**Problem Name**   : <PROBLEM_NAME>  
-**LeetCode ID**    : <PROBLEM_ID>  
-**Difficulty**     : <Easy / Medium / Hard>
+**Problem Name**   : Minimum ASCII Delete Sum for Two Strings
+
+**LeetCode ID**    : 712
+
+**Difficulty**     : Medium
 
 ## Example
-Input: <input_example>
-
-Output: <output_example>
+    Input: s1 = "sea", s2 = "eat"
+    Output: 231
+    Explanation: Deleting "s" from "sea" adds the ASCII value of "s" (115) to the sum.
+    Deleting "t" from "eat" adds 116 to the sum.
+    At the end, both strings are equal, and 115 + 116 = 231 is the minimum sum possible to achieve this.
 
 ## Algorithm
-1. <Step 1>
-2. <Step 2>
-3. <Step 3>
-4. <Step 4>
-
+1. Traverse through both strings character by character using Dynamic Programming.
+2. Find the CS with the maximum ASCII sum.
+3. Keep this subsequence in both strings.
+4. Delete all other characters from both strings.
+5. Calculate:
+    min_sum = asciiSum(s1) + asciiSum(s2) − 2 × asciiSum(MCS)
+6. Return min_sum.
 ---
 
 ## Working
 
-<!-- ![working](./Diagram.png) -->
+![working](./Diagram.png)
 
 
 ---
@@ -27,10 +33,11 @@ Output: <output_example>
 ## Complexity
 
 Time Complexity:
-O(n) – traversal of arrays
+O(m × n) - DP over both strings
 
 Space Complexity:
-O(n) – extra set is used
+O(m × n) – DP table storage
 
 ## Submission
-<!-- ![submission](./submit.png) -->
+
+![submission](./submit.png)
