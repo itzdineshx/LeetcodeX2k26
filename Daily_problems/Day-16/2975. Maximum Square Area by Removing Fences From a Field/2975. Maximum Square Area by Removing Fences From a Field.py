@@ -14,7 +14,6 @@ Output: 4
 Explanation: Removing the horizontal fence at 2 and the vertical fence at 2 will give a square field of area 4.
 """
 
-# Optimal Solution
 """
 Algorithm:
 ----------
@@ -25,6 +24,11 @@ Algorithm:
 5. If no common distance -> -1; o.w -> square area
 """
 
+# solution
+m = 4
+n = 3
+hFences = [2,3]
+vFences = [2]
 M = 10**9+7
 # fences -> (1,1) to (m,n) -> (height, width)
 hFences.extend([1,m]) 
@@ -53,11 +57,7 @@ if side == 0:
     print(-1)
 
 # if possible
-print((side * side) % M)
-
-"""
-
-"""
+print((side * side) % M) # (2 * 2) % 10**9+7
 
 """
 Time Complexity:
